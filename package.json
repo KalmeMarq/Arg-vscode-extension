@@ -1,0 +1,35 @@
+{
+  "name": "arg",
+  "displayName": "arg",
+  "description": "",
+  "version": "0.0.1",
+  "engines": {
+    "vscode": "^1.61.0"
+  },
+  "categories": [
+    "Programming Languages"
+  ],
+  "contributes": {
+    "languages": [
+      {
+        "id": "arg",
+        "aliases": ["arg", "arg"],
+        "extensions": ["arg"],
+        "configuration": "./language-configuration.json"
+      }
+    ],
+    "grammars": [
+      {
+        "language": "arg",
+        "scopeName": "source.arg",
+        "path": "./syntaxes/arg.tmLanguage.json"
+      }
+    ],
+    "snippets": [
+      {
+        "language": "arg",
+        "path": "./snippets.json"
+      }
+    ]
+  }
+}

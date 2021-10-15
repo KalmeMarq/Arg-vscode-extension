@@ -1,0 +1,40 @@
+{
+  "new algoritm": {
+    "prefix": "!alg",
+    "body": [
+      "Algoritmo \"${1:name}\"",
+      "Var",
+      "  $2",
+      "",
+      "Inicio",
+      "  $3",
+      "",
+      "Fimalgoritmo"
+    ],
+    "description": "new algoritm"
+  },
+  "write": {
+    "prefix": "esc",
+    "body": [
+      "Escreva (\"$1\")"
+    ],
+    "description": "write"
+  },
+  "write line": {
+    "prefix": "escl",
+    "body": [
+      "Escreval (\"$1\")"
+    ],
+    "description": "write line"
+  },
+  "function": {
+    "prefix": "func",
+    "body": [
+      "funcao ${1:name} (${2:params}): ${3:returntype}",
+      "inicio",
+      "  $4",
+      "fimfuncao"
+    ],
+    "description": "function"
+  }
+}

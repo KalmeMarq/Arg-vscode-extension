@@ -1,0 +1,147 @@
+{
+	"$schema": "https://raw.githubusercontent.com/martinring/tmlanguage/master/tmlanguage.json",
+	"name": "arg",
+	"patterns": [
+		{
+			"include": "#scope"
+		},
+		{
+			"include": "#keywords"
+		},
+		{
+			"include": "#strings"
+		},
+		{
+			"include": "#comment"
+		},
+		{
+			"include": "#function"
+		},
+		{
+			"include": "#operator"
+		},
+		{
+			"include": "#variable"
+		},
+    {
+      "include": "#type-primitive"
+    }
+	],             
+	"repository": {
+    "type-primitive": {
+      "name": "support.type.primitive.arg",
+      "match": "(caractere|inteiro|real|logico|vetor\\s+\\[([0-9]+..[0-9]+,(\\s+)?)*[0-9]+..[0-9]+\\]\\s+de\\s+.+)"
+    },
+		"keywords": {
+			"patterns": [
+				{
+					"name": "keyword.control.arg",
+					"match": "(?i)\\bRETORNE\\b"
+				},
+				{
+					"name": "keyword.control.conditional.arg",
+					"match": "(?i)\\b(SE|ENTAO|SENAO)\\b"
+				},
+				{
+					"name": "keyword.control.loop.arg",
+					"match": "(?i)\\b(PARA|ATE|FACA|PASSO|ENQUANTO|REPITA)\\b"
+				}
+			]
+		},
+    "variable": {
+			"patterns": [
+				{
+					"name": "constant.language.arg",
+					"match": "(?i)\\b(VERDADEIRO|FALSO)\\b"
+				},
+				{
+					"name": "constant.numeric.real.arg",
+					"match": "\\b\\d+(\\,|\\.)[0-9]\\b"
+				},
+				{
+					"name": "constant.numeric.integer.arg",
+					"match": "\\b\\d+\\b"
+				}
+			]
+		},
+		"operator": {
+			"patterns": [
+				{
+					"name": "keyword.operator.assigment.arg",
+					"match": "<-"
+				},
+				{
+					"name": "keyword.operator.arithmetic.arg",
+					"match": "\\+|-|/|\\*|mod"
+				},
+				{
+					"name": "keyword.operator.relational.arg",
+					"match": "=|<>|<|>|<=|>="
+				},
+				{
+					"name": "keyword.operator.logical.arg",
+					"match": "(?i)\\b(OU|E|NAO)\\b"
+				}
+			]
+		},
+		"scope": {
+			"patterns": [
+				{
+					"name": "keyword.scope.geral.arg",
+					"match": "(?i)\\b(INICIO|FIM|VAR|FUNCAO)\\b"
+				},
+				{
+					"name": "keyword.scope.algorithm.arg",
+					"match": "(?i)\\b(ALGORITMO|FIMALGORITMO)\\b"
+				},
+				{
+					"name": "keyword.scope.conditional.arg",
+					"match": "(?i)\\b(FIMSE|FIMSENAO)\\b"
+				},
+				{
+					"name": "keyword.scope.function.arg",
+					"match": "(?i)\\b(FIMFUNCAO)\\b"
+				},
+				{
+					"name": "keyword.scope.loop.arg",
+					"match": "(?i)\\b(FIMPARA|FIMENQUANTO)\\b"
+				}
+			]
+		},
+		"function": {
+			"patterns": [
+				{
+					"name": "support.function.io.arg",
+					"match": "(?i)\\b(LEIA|ESCREVA|ESCREVAL)\\b"
+				},
+				{
+					"begin": "\\.",
+					"end": "\\(",
+					"patterns": [
+						{
+							"name": "entity.name.function.arg",
+							"match": "\\w"
+						}
+					]
+				}
+			]
+		},
+		"comment": {
+			"name":"comment.line.arg",
+			"begin": "//|#",
+			"end": "\n"
+		},
+		"strings": {
+			"name": "string.quoted.double.arg",
+			"begin": "\"",
+			"end": "\"",
+			"patterns": [
+				{	
+					"name": "constant.character.escape.arg",
+					"match": "\\\\."
+				}
+			]
+		}
+	},
+	"scopeName": "source.arg"
+}
