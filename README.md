@@ -1,2 +1,2 @@
 # Arg-vscode-extension
-Based in portugol extension
+Based on portugol extension
