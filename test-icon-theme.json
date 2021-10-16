@@ -1,0 +1,10 @@
+{
+  "iconDefinitions": {
+    "_arg": {
+      "iconPath": "./visualg.png"
+    }
+  },
+  "fileExtensions": {
+    "arg": "_arg"
+  }
+}

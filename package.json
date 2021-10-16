@@ -1,13 +1,16 @@
 {
   "name": "arg",
-  "displayName": "arg",
-  "description": "",
-  "version": "0.0.1",
+  "displayName": "VisualG",
+  "publisher": "KalmeMarq",
+  "description": "Adds syntax highlight and some snippets for visualg.",
+  "icon": "visualg.png",
+  "version": "1.0.0",
   "engines": {
     "vscode": "^1.61.0"
   },
   "categories": [
-    "Programming Languages"
+    "Programming Languages",
+    "Snippets"
   ],
   "contributes": {
     "languages": [

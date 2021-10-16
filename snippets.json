@@ -36,5 +36,15 @@
       "fimfuncao"
     ],
     "description": "function"
+  },
+  "switch": {
+    "prefix": "esco",
+    "body": [
+      "Escolha ${1:key}",
+      "  caso ${2:value}",
+      "    $3",
+      "Fimescolha"
+    ],
+    "description": "switch"
   }
 }

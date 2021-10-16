@@ -44,7 +44,7 @@
 				},
 				{
 					"name": "keyword.control.loop.arg",
-					"match": "(?i)\\b(PARA|ATE|FACA|PASSO|ENQUANTO|REPITA)\\b"
+					"match": "(?i)\\b(PARA|ATE|FACA|PASSO|ENQUANTO|ESCOLHA|CASO|REPITA)\\b"
 				}
 			]
 		},
@@ -92,7 +92,7 @@
 				},
 				{
 					"name": "keyword.scope.algorithm.arg",
-					"match": "(?i)\\b(ALGORITMO|FIMALGORITMO)\\b"
+					"match": "(?i)\\b(ALGORITMO|FIMALGORITMO|FIMESCOLHA)\\b"
 				},
 				{
 					"name": "keyword.scope.conditional.arg",
