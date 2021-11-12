@@ -1,5 +1,5 @@
 {
-  "name": "arg",
+  "name": "alg",
   "displayName": "VisualG",
   "publisher": "KalmeMarq",
   "description": "Adds syntax highlight and some snippets for visualg.",
@@ -15,22 +15,22 @@
   "contributes": {
     "languages": [
       {
-        "id": "arg",
-        "aliases": ["arg", "arg"],
-        "extensions": ["arg"],
+        "id": "alg",
+        "aliases": ["alg", "alg"],
+        "extensions": ["alg"],
         "configuration": "./language-configuration.json"
       }
     ],
     "grammars": [
       {
-        "language": "arg",
-        "scopeName": "source.arg",
-        "path": "./syntaxes/arg.tmLanguage.json"
+        "language": "alg",
+        "scopeName": "source.alg",
+        "path": "./syntaxes/alg.tmLanguage.json"
       }
     ],
     "snippets": [
       {
-        "language": "arg",
+        "language": "alg",
         "path": "./snippets.json"
       }
     ]

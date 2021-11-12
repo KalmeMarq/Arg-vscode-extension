@@ -29,37 +29,37 @@
 	],             
 	"repository": {
     "type-primitive": {
-      "name": "support.type.primitive.arg",
+      "name": "support.type.primitive.alg",
       "match": "(caractere|inteiro|real|logico|vetor\\s+\\[([0-9]+..[0-9]+,(\\s+)?)*[0-9]+..[0-9]+\\]\\s+de\\s+.+)"
     },
 		"keywords": {
 			"patterns": [
 				{
-					"name": "keyword.control.arg",
+					"name": "keyword.control.alg",
 					"match": "(?i)\\bRETORNE\\b"
 				},
 				{
-					"name": "keyword.control.conditional.arg",
+					"name": "keyword.control.conditional.alg",
 					"match": "(?i)\\b(SE|ENTAO|SENAO)\\b"
 				},
 				{
-					"name": "keyword.control.loop.arg",
-					"match": "(?i)\\b(PARA|ATE|FACA|PASSO|ENQUANTO|ESCOLHA|CASO|REPITA)\\b"
+					"name": "keyword.control.loop.alg",
+					"match": "(?i)\\b(PARA|ATE|FACA|PASSO|ENQUANTO|ESCOLHA|CASO|OUTROCASO|OUTRO\\s*CASO|REPITA)\\b"
 				}
 			]
 		},
     "variable": {
 			"patterns": [
 				{
-					"name": "constant.language.arg",
+					"name": "constant.language.alg",
 					"match": "(?i)\\b(VERDADEIRO|FALSO)\\b"
 				},
 				{
-					"name": "constant.numeric.real.arg",
+					"name": "constant.numeric.real.alg",
 					"match": "\\b\\d+(\\,|\\.)[0-9]\\b"
 				},
 				{
-					"name": "constant.numeric.integer.arg",
+					"name": "constant.numeric.integer.alg",
 					"match": "\\b\\d+\\b"
 				}
 			]
@@ -67,19 +67,19 @@
 		"operator": {
 			"patterns": [
 				{
-					"name": "keyword.operator.assigment.arg",
-					"match": "<-"
+					"name": "keyword.operator.assigment.alg",
+					"match": "(<-|:=)"
 				},
 				{
-					"name": "keyword.operator.arithmetic.arg",
+					"name": "keyword.operator.arithmetic.alg",
 					"match": "\\+|-|/|\\*|mod"
 				},
 				{
-					"name": "keyword.operator.relational.arg",
+					"name": "keyword.operator.relational.alg",
 					"match": "=|<>|<|>|<=|>="
 				},
 				{
-					"name": "keyword.operator.logical.arg",
+					"name": "keyword.operator.logical.alg",
 					"match": "(?i)\\b(OU|E|NAO)\\b"
 				}
 			]
@@ -87,23 +87,23 @@
 		"scope": {
 			"patterns": [
 				{
-					"name": "keyword.scope.geral.arg",
-					"match": "(?i)\\b(INICIO|FIM|VAR|FUNCAO)\\b"
+					"name": "keyword.scope.geral.alg",
+					"match": "(?i)\\b(INICIO|FIM|VAR|FUNCAO|CONST)\\b"
 				},
 				{
-					"name": "keyword.scope.algorithm.arg",
+					"name": "keyword.scope.algorithm.alg",
 					"match": "(?i)\\b(ALGORITMO|FIMALGORITMO|FIMESCOLHA)\\b"
 				},
 				{
-					"name": "keyword.scope.conditional.arg",
+					"name": "keyword.scope.conditional.alg",
 					"match": "(?i)\\b(FIMSE|FIMSENAO)\\b"
 				},
 				{
-					"name": "keyword.scope.function.arg",
+					"name": "keyword.scope.function.alg",
 					"match": "(?i)\\b(FIMFUNCAO)\\b"
 				},
 				{
-					"name": "keyword.scope.loop.arg",
+					"name": "keyword.scope.loop.alg",
 					"match": "(?i)\\b(FIMPARA|FIMENQUANTO)\\b"
 				}
 			]
@@ -111,37 +111,37 @@
 		"function": {
 			"patterns": [
 				{
-					"name": "support.function.io.arg",
-					"match": "(?i)\\b(LEIA|ESCREVA|ESCREVAL)\\b"
+					"name": "support.function.io.alg",
+					"match": "(?i)\\b(LEIA|ESCREVA|ESCREVAL|INT|ABS|SIN|COS|SQR|SQRT)\\b"
 				},
 				{
 					"begin": "\\.",
 					"end": "\\(",
 					"patterns": [
 						{
-							"name": "entity.name.function.arg",
+							"name": "entity.name.function.alg",
 							"match": "\\w"
 						}
 					]
 				}
-			]
+      ]
 		},
 		"comment": {
-			"name":"comment.line.arg",
+			"name":"comment.line.alg",
 			"begin": "//|#",
 			"end": "\n"
 		},
 		"strings": {
-			"name": "string.quoted.double.arg",
+			"name": "string.quoted.double.alg",
 			"begin": "\"",
 			"end": "\"",
 			"patterns": [
 				{	
-					"name": "constant.character.escape.arg",
+					"name": "constant.character.escape.alg",
 					"match": "\\\\."
 				}
 			]
 		}
 	},
-	"scopeName": "source.arg"
+	"scopeName": "source.alg"
 }
